@@ -33,8 +33,27 @@ body{
 
     background-color            : brown;
     grid-column                 : span 12;
-    padding: 2rem 0 0 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     width                       : 100%;
+
 }
+.content-one{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* set upr box info */
+
+.box-info-1,
+.box-info-2,
+.box-info-3 {
+    
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+/* end set upr box info */
+
 
 /* end setup main content-one */

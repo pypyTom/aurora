@@ -17,3 +17,23 @@
 }
 
 /* end setup main content-one */
+
+/* setup new grid in content-one for threr boxes */
+.content-one{
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+}
+
+.box-info-1 {
+    -ms-grid-column                 : 1;
+   
+}
+.box-info-2 {
+    -ms-grid-column                 : 2;
+    
+}
+.box-info-3 {
+    -ms-grid-column                 : 3;
+   
+}
+/* END setup new grid in content-one for threr boxes */

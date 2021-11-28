@@ -7,18 +7,34 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color            : rgb(255, 185, 127);
 
 }
 
 /* main conatiner */
 
 .container{
-    background-color: black;
-    margin: 10rem auto;
-    
-    min-height: 100vh;
-    width: 80%;
+    background-color            : black;
+    margin                      : 10rem auto;
+    min-height                  : 100vh;
+    width                       : 80%;
+}
+.container{
+    display                         : grid;
+    grid-template-columns           : repeat(12,1fr) ;
+    grid-template-rows              :  [first] 300px [second] 600px [last] ;
 }
 
 /* end main container */
+
+/* setup main content-one */
+
+.content-one{
+
+    background-color            : brown;
+    grid-column                 : span 12;
+    padding: 2rem 0 0 2rem;
+    width                       : 100%;
+}
+
+/* end setup main content-one */

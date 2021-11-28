@@ -1,0 +1,19 @@
+/* grid container */
+.container{
+    display: -ms-grid;
+    -ms-grid-columns        : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows           : 300px  600px ;
+}
+
+/* end grid container */
+
+/* setup main content-one */
+
+.content-one{
+
+
+    -ms-grid-column                 : 1;
+    -ms-grid-column-span            : 12;
+}
+
+/* end setup main content-one */

@@ -18,7 +18,8 @@
            
 
                 <!-- The form -->
-                <form class="form-search" action="">
+                <form action="" class="form-search" method="POST">
+                    {% csrf_token %}
            
                     <input  type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
@@ -41,7 +42,7 @@
                 <div class="box-info-3">
                  332
                 <hr>
-                Tychy - Smog
+                {{city|upper}} {{datas.country_code}}
                 </div>
                 
         </section>

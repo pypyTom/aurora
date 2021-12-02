@@ -1,0 +1,94 @@
+*{
+    box-sizing      : border-box;
+    font-size       : 1em;
+    margin          : 0;
+    padding         : 0;
+
+}
+
+body{
+    background-color            : rgb(255, 185, 127);
+
+}
+
+/* main conatiner */
+
+/* setup section form search */
+
+
+.search{
+    background-color            : blanchedalmond;
+    grid-column                 : span 12;
+    width                       : 100%;
+    padding                     : 1rem 1rem 0 1rem;
+}
+
+.form-search input[type=text]{
+
+    background-color            : rgb(255, 195, 66);
+    border                      : 0;
+    height                      : 2.5rem;
+    width                       : 80%;
+}
+.form-search button{
+    background-color            : rgb(0, 162, 255);
+    border                      : 0 ;
+    height                      : 2.5rem;
+    width                       : 19%;
+}
+
+ /* end setup section form search */
+
+
+
+.container{
+    background-color            : black;
+    margin                      : 10rem auto;
+    min-height                  : 100vh;
+    width                       : 80%;
+}
+.container{
+    display                         : grid;
+    grid-template-columns           : repeat(12,1fr) ;
+    grid-template-rows              :  [first] 100px [second] 300px [three] 600px [last] ;
+}
+
+/* end main container */
+
+/* setup main content-one */
+
+.content-one{
+
+    background-color            : brown;
+    grid-column                 : span 12;
+    grid-row                    : 2;
+    padding                     : 2rem 2rem 2rem 2rem;
+    width                       : 100%;
+
+}
+.content-one{
+    display                     : grid;
+    grid-template-columns       : repeat(3,1fr);
+}
+
+/* set upr box info */
+
+.box-info-1,
+.box-info-2,
+.box-info-3 {
+    
+    
+    border-radius           : 15% ;
+    background-color        : whitesmoke;
+    margin                  : auto;
+    font-size               : 4rem;
+    height                  : 100%;
+    text-align              : center;
+    
+    width                   : 60%;
+}
+
+/* end set upr box info */
+
+
+/* end setup main content-one */

@@ -1,0 +1,51 @@
+/* grid container */
+.container{
+    display: -ms-grid;
+    -ms-grid-columns        : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows           : 100px 300px  600px ;
+}
+
+/* end grid container */
+
+/* setup section search */
+
+.search{
+ -ms-grid-column-span: 12;                  
+}
+ /* end setup section search */
+
+
+
+/* setup main content-one */
+
+.content-one{
+
+
+    -ms-grid-column                 : 1;
+    -ms-grid-row                    : 2;
+    -ms-grid-column-span            : 12;
+}
+
+/* end setup main content-one */
+
+/* setup new grid in content-one for threr boxes */
+.content-one{
+    display                         : -ms-grid;
+    -ms-grid-columns                : 1fr 1fr 1fr;
+    -ms-grid-rows                   : 100%;
+}
+
+.box-info-1 {
+    -ms-grid-column                 : 1;
+    
+   
+}
+.box-info-2 {
+    -ms-grid-column                 : 2;
+    
+}
+.box-info-3 {
+    -ms-grid-column                 : 3;
+   
+}
+/* END setup new grid in content-one for threr boxes */

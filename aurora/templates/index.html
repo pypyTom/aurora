@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'grid-for-ie.css' %}">
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css'%}">
     <title>Aurora </title>
 </head>
 <body>
 <!-- main conatiner -->   
     <div class="container">
+        <section class="data">
+            <div class="data-content">
+                <p class="text-data">Tychy</p>   
+            </div>
+        </section>
         <section class="search">
            
 
                 <!-- The form -->
-                <form action="" class="form-search" method="POST">
-                    {% csrf_token %}
+                <form class="form-search" action="">
            
                     <input  type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
@@ -28,21 +31,24 @@
         </section>
     
         <section class="content-one">
-
+          
                 <div class="box-info-1">
-                 33C
-                    <hr>
-                    Tychy
+           
+           <p class="text-box">temperatura
+               
+           </p>       
+                
                 </div>
                 <div class="box-info-2">
-                    3233.
-                 <hr>
-                 Tychy- Opady.
+                    <p class="text-box">Opady</p>   
+                  
+               
+          
                 </div>
                 <div class="box-info-3">
-                 332
-                <hr>
-                {{city|upper}} {{datas.country_code}}
+                    <p class="text-box">Smog</p>   
+             
+        
                 </div>
                 
         </section>

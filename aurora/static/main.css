@@ -13,6 +13,19 @@ body{
 
 /* main conatiner */
 
+/* setup data container */
+.data{
+    background-color            : blueviolet;
+    grid-column                 : span 12;
+    padding                     : 1rem 1rem 0 1rem;
+}
+.text-data{
+    font-size: 3.5vw;
+    font-weight: bolder;
+}
+/* end data container */
+
+
 /* setup section form search */
 
 
@@ -22,6 +35,7 @@ body{
     width                       : 100%;
     padding                     : 1rem 1rem 0 1rem;
 }
+
 
 .form-search input[type=text]{
 
@@ -50,7 +64,7 @@ body{
 .container{
     display                         : grid;
     grid-template-columns           : repeat(12,1fr) ;
-    grid-template-rows              :  [first] 100px [second] 300px [three] 600px [last] ;
+    grid-template-rows              :  [first] 100px [second] 100px [three] 600px [last] ;
 }
 
 /* end main container */
@@ -59,11 +73,14 @@ body{
 
 .content-one{
 
-    background-color            : brown;
+    background-color: rgba(165, 42, 42, 0.5);
+
     grid-column                 : span 12;
-    grid-row                    : 2;
+    grid-row                    : 3;
     padding                     : 2rem 2rem 2rem 2rem;
     width                       : 100%;
+    height                      : 100%;
+    
 
 }
 .content-one{
@@ -82,13 +99,74 @@ body{
     background-color        : whitesmoke;
     margin                  : auto;
     font-size               : 4rem;
-    height                  : 100%;
+    height                  : 50%;
     text-align              : center;
+    position                : relative;
     
     width                   : 60%;
+    
 }
+.text-box{
+    left                    : 50%;
+    font-size               : 3vw;
+    padding                 : 1rem 1rem 1rem 1rem;
+    position                : absolute;
+    text-align              : center;
+    top                     : 50%;
+    transform               : translate(-50%,-50%);
+}
+.box-info-1{
+    
+    background-image        : url('/static/media/pogoda.jpg');
+    background-size         : 100% 100%;
+
+}
+.box-info-2{
+    
+    background-image        : url('/static/media/rain.jpg');
+    background-size         : 100% 100%;
+  
+}
+.box-info-3{
+    
+    background-image        : url('/static/media/smog.jpg');
+    background-size         : 100% 100%;
+    
+}
+
+
 
 /* end set upr box info */
 
 
 /* end setup main content-one */
+
+
+
+/* respo */
+@media screen and (max-width:1000px){
+    
+    .container{
+
+    grid-template-columns           : repeat(1,1fr)
+}
+.content-one{
+    grid-template-columns           : repeat(1,1fr) 
+}
+
+.box-info-1,
+.box-info-2,
+.box-info-3{
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+}
+.text-box{
+    font-size: 10vw;
+}
+.text-data{
+    font-size: 6vw;
+    font-weight: bolder;
+}
+}
+/* end respo */

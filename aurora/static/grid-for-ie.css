@@ -2,15 +2,25 @@
 .container{
     display: -ms-grid;
     -ms-grid-columns        : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows           : 100px 300px  600px ;
+    -ms-grid-rows           : 100px 100px  600px ;
 }
 
 /* end grid container */
+.data{
+    -ms-grid-column                 : 1;
+    -ms-grid-column-span            : 12;    
+}
+/* setup container data */
+
+/* end container data */
+
 
 /* setup section search */
 
 .search{
- -ms-grid-column-span: 12;                  
+    -ms-grid-column                 : 1;
+    -ms-grid-row                    : 2;
+    -ms-grid-column-span            : 12;                  
 }
  /* end setup section search */
 
@@ -22,7 +32,7 @@
 
 
     -ms-grid-column                 : 1;
-    -ms-grid-row                    : 2;
+    -ms-grid-row                    : 3;
     -ms-grid-column-span            : 12;
 }
 
@@ -49,3 +59,43 @@
    
 }
 /* END setup new grid in content-one for threr boxes */
+
+
+/* respo */
+@media screen and (max-width:1000px){
+    
+    .container{
+        -ms-grid-columns                : 1fr ;
+        
+      
+}
+.content-one{
+    -ms-grid-columns                : 1fr;
+    -ms-grid-rows                   : 1fr 1fr 1fr ;
+    -ms-grid-row                    : 3;
+   
+}
+.box-info-1{
+    -ms-grid-column                     : 1;
+    -ms-grid-row                        : 1;
+ 
+ 
+   
+}
+.box-info-2{
+    -ms-grid-column                     : 1;
+    -ms-grid-row                        : 2;
+
+   
+}
+.box-info-3{
+    -ms-grid-column                     : 1;
+
+    -ms-grid-row                        : 3;
+   
+}
+
+
+
+}
+/* ens respo */
